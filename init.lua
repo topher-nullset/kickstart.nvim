@@ -273,6 +273,12 @@ vim.o.hlsearch = false
 -- Make line numbers default
 vim.wo.number = true
 
+-- Make line numbers relative (custom)
+vim.o.relativenumber = true
+
+-- Keep 8 line numbers at limits (custom)
+vim.o.scrolloff = 8
+
 -- Enable mouse mode
 vim.o.mouse = 'a'
 
