@@ -321,7 +321,7 @@ vim.keymap.set('n', 'k', "v:count == 0 ? 'gk' : 'k'", { expr = true, silent = tr
 vim.keymap.set('n', 'j', "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = true })
 
 -- Remap to get to phile vault faster
-vim.keymap.set('n', '<space>pv', vim.cmd.Ex)
+vim.keymap.set('n', '<space>pv', vim.cmd.Ex, { desc = 'Project View'})
 
 -- Remap to make visual mode move highlighted text
 vim.keymap.set('v', 'J', ":m '>+1<CR>gv=gv")
