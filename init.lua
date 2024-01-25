@@ -325,6 +325,13 @@ vim.keymap.set('n', 'j', "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = tr
 -- Remap to get to phile vault faster
 vim.keymap.set('n', '<space>pv', vim.cmd.Ex, { desc = 'Project View'})
 
+-- Copilot remap cuz Tab
+ vim.keymap.set('i', '<C-J>', 'copilot#Accept("\\<CR>")', {
+    expr = true,
+  replace_keycodes = false
+})
+vim.g.copilot_no_tab_map = true
+
 -- Remap to make visual mode move highlighted text
 vim.keymap.set('v', 'J', ":m '>+1<CR>gv=gv")
 vim.keymap.set('v', 'K', ":m '<-2<CR>gv=gv")
