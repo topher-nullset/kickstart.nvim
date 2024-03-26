@@ -98,6 +98,9 @@ vim.opt.scrolloff = 10
 -- Remap to get to phile vault faster (custom)
 vim.keymap.set('n', '<space>pv', vim.cmd.Ex, { desc = 'Project View' })
 
+-- Key mapping for opening Neo-tree with 'leader pp'
+vim.keymap.set('n', '<space>pp', '<cmd>Neotree filesystem reveal float<CR>', { desc = 'Neotree floater', noremap = true, silent = true })
+
 -- Copilot remap cuz Tab (custom)
 vim.keymap.set('i', '<C-J>', 'copilot#Accept("\\<CR>")', {
   expr = true,
