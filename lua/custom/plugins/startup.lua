@@ -65,7 +65,7 @@ return {
         dashboard.section.footer.val = {
           '󱐌 ' .. stats.count .. ' plugins loaded in ' .. count .. ' ms',
           ' ',
-          '      The Lonely Engineer',
+          '      The Engineer',
         }
         pcall(vim.cmd.AlphaRedraw)
       end,
