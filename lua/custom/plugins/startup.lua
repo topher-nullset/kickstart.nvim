@@ -46,12 +46,6 @@ return {
       dashboard.button('q', '   Quit NVIM', ':qa<CR>'),
     }
 
-    --local function footer()
-    --return "The Lonely Astronaut"
-    --end
-
-    --dashboard.section.footer.val = footer()
-
     dashboard.opts.opts.noautocmd = true
     alpha.setup(dashboard.opts)
 
@@ -65,7 +59,7 @@ return {
         dashboard.section.footer.val = {
           '󱐌 ' .. stats.count .. ' plugins loaded in ' .. count .. ' ms',
           ' ',
-          '      The Engineer',
+          '      The Lonely Astronaut',
         }
         pcall(vim.cmd.AlphaRedraw)
       end,
